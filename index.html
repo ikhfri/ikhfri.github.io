@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>X TKJ 2</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body class="background">
+    <div class="btn">
+        <span class="fas fa-bars"></span>
+    </div>
+    <nav class="sidebar">
+        <div class="text">
+            X TKJ 2
+        </div>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li>
+                <a href="#" class="feat-btn">Jadwal
+                    <span class="fas fa-caret-down first"></span>
+                </a>
+                <ul class="feat-show">
+                    <li><a href="assets/blok1.jpg">Blok 1</a></li>
+                    <li><a href="assets/blok2.jpg">Blok 2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="https://www.instagram.com/expoteds/"> Expoteds<img  class="ig" src="assets/ig1.png" alt=""></a></li>
+           
+
+
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="header">
+            WELCOME TO
+        </div>
+        <p>
+            X TKJ 2 WEBSITE
+        </p>
+        <img src="assets//XTKJ.png" alt="">
+    </div>
+    <script>
+        $('.btn').click(function () {
+            $(this).toggleClass("click");
+            $('.sidebar').toggleClass("show");
+        });
+        $('.feat-btn').click(function () {
+            $('nav ul .feat-show').toggleClass("show");
+            $('nav ul .first').toggleClass("rotate");
+        });
+        $('.serv-btn').click(function () {
+            $('nav ul .serv-show').toggleClass("show1");
+            $('nav ul .second').toggleClass("rotate");
+        });
+        $('nav ul li').click(function () {
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    </script>
+    <footer>
+
+        <p>Copyright &copy; 2022 -XTKJ2 WebDev Team</p>
+
+</body>
+
+</html>
